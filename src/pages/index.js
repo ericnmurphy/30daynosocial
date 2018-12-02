@@ -1,14 +1,14 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import addToMailchimp from 'gatsby-plugin-mailchimp'
 
 import Layout from '../components/layout'
-import Image from '../components/image'
+import SubscribeForm from '../components/subscribeForm'
 
 const IndexPage = () => (
   <Layout>
     <section
       style={{
-        marginBottom: '8rem',
+        marginBottom: '6rem',
       }}
     >
       <h1
@@ -59,7 +59,7 @@ const IndexPage = () => (
     </section>
     <section
       style={{
-        marginBottom: '8rem',
+        marginBottom: '6rem',
       }}
     >
       <h3>What is #30DayNoSocialChallenge?</h3>
@@ -87,7 +87,7 @@ const IndexPage = () => (
     </section>
     <section
       style={{
-        marginBottom: '8rem',
+        marginBottom: '6rem',
       }}
     >
       <h3>My Story</h3>
@@ -113,12 +113,12 @@ const IndexPage = () => (
       </p>
       <p>
         I wanted to quit, but I had the idea to help others to do the same.
-        Together, we can all break free.
+        Together we can all break free.
       </p>
-    </section>{' '}
+    </section>
     <section
       style={{
-        marginBottom: '8rem',
+        marginBottom: '6rem',
       }}
     >
       <h3>Join Now</h3>
@@ -127,6 +127,7 @@ const IndexPage = () => (
         to get started.
       </p>
       <p>Just drop your email below 👇</p>
+      <SubscribeForm />
     </section>
   </Layout>
 )

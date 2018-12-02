@@ -5,7 +5,6 @@ import React from 'react'
 const Header = ({ siteTitle }) => (
   <div
     style={{
-      background: 'rebeccapurple',
       marginBottom: '1.45rem',
     }}
   >
@@ -16,7 +15,9 @@ const Header = ({ siteTitle }) => (
         padding: '1.45rem 1.0875rem',
       }}
     >
-      <h1 style={{ margin: 0 }}>🙅‍♀️📱 #30DayNoSocialChallenge</h1>
+      <h1 style={{ fontSize: '1rem', margin: 0 }}>
+        🙅‍♀️📱 #30DayNoSocialChallenge
+      </h1>
     </div>
   </div>
 )
